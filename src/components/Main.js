@@ -172,6 +172,7 @@ const Main = () => {
             </Contact>
             <BLOG to="/blog">
                 <motion.h2
+                className='intern'
                 initial={{
                     y:-200,
                     transition: { type:'spring', duration: 1.5, delay:1}
