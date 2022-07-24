@@ -80,7 +80,7 @@ const BlogPage = () => {
                 <SocialIcons />
                 <AnchorComponent number={numbers}/>
 <Center>
-<Grid>
+<Grid className='grid'>
 
 {
     Blogs.map(blog => {

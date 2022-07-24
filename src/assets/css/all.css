@@ -16,5 +16,8 @@
     .intern{
         right:0.5rem;
     }
+    .grid{
+        grid-template-columns: repeat(1, minmax(calc(10rem + 15vw), 1fr));
+    }
 }
 
