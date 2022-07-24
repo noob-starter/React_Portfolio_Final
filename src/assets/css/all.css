@@ -1,8 +1,12 @@
 @media Screen and (max-width: 500px){
     .imgX{
         transform: scale(0);
+        width:0px;
+        height:0px;
     }
     .heading{
+        width: 20px;
+        height:20px;
         right:0rem;
         left: 5rem;
     }
