@@ -154,6 +154,7 @@ const Main = () => {
 
             <Contact target="_blank" to={{pathname:"mailto:pratikyawalkar5263@gmail.com"}}>
                 <motion.h2
+                className='heading'
                 initial={{
                     y:-200,
                     transition: { type:'spring', duration: 1.5, delay:1}

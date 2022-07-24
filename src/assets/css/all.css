@@ -2,4 +2,7 @@
     .imgX{
         transform: scale(0);
     }
+    .heading{
+        right:0%;
+    }
 }
