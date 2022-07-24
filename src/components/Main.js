@@ -188,6 +188,7 @@ const Main = () => {
             </BLOG>
             <WORK to="/work" click={+click}>
                 <motion.h2
+                className='work'
                 initial={{
                     y:-200,
                     transition: { type:'spring', duration: 1.5, delay:1}
