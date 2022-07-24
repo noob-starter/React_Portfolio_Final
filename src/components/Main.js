@@ -8,6 +8,7 @@ import SocialIcons from '../subComponents/SocialIcons'
 import Intro from './Intro'
 import HelloGIF from '../assets/image_gifs/sayHello.gif'
 import ImageX from '../assets/Images/golden_shield.svg'
+import '../assets/css/all.css'
 ;
 
 
@@ -165,7 +166,7 @@ const Main = () => {
                 whileTap={{scale: 0.9}}
                 
                 >
-                    Say hello <img  src={HelloGIF} alt="helloImage" id="helloImage"/>
+                    Say hello <img  className='imgX' src={HelloGIF} alt="helloImage" id="helloImage"/>
                 </motion.h2>
             </Contact>
             <BLOG to="/blog">

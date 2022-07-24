@@ -1,0 +1,5 @@
+@media Screen and (max-width: 500px){
+    .imgX{
+        transform: scale(0);
+    }
+}
