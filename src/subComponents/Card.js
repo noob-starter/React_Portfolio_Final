@@ -26,6 +26,9 @@ color:${props => props.theme.text};
 border: 1px solid whitesmoke;
 box-shadow: -10px 10px 10px -4px rgba(0,0,0,0.74);
 }
+@media (max-width: 500px) {
+    margin-right: 4rem;
+  }
 `
 const Title = styled.h2`
 font-size: calc(1em + 0.5vw);

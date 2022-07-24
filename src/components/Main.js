@@ -46,6 +46,9 @@ right: calc(1rem + 2vw);
 transform: rotate(90deg) translate(-50%, -50%);
 text-decoration: none;
 z-index:1;
+@media (max-width: 500px) {
+    right: 0rem;
+  }
 `
 const WORK = styled(NavLink)`
 color: ${props => props.click ? props.theme.body : props.theme.text};
@@ -56,6 +59,9 @@ left: calc(1rem + 2vw);
 transform: translate(-50%, -50%) rotate(-90deg) ;
 text-decoration: none;
 z-index:1;
+@media (max-width: 500px) {
+    top:40%;
+  }
 `
 
 const BottomBar = styled.div`
@@ -113,6 +119,7 @@ transition: all 1s ease;
     display: ${props => props.click ? 'none' :'inline-block'  };
     padding-top: 1rem;
 }
+
 `
 
 const DarkDiv = styled.div`
@@ -148,7 +155,7 @@ const Main = () => {
             <SocialIcons theme={click ? 'dark' :'light'} />
            
             <Center click={click}>
-                <img src={ImageX} onClick={()=>{ handleClick(); resizeImage();}} width={click ? 120 : 200} height={click ? 120 : 200} fill='currentColor' alt='InitialImage'/>
+                <img src={ImageX} onClick={()=>{ handleClick(); resizeImage();}} width={click ? 80 : 200} height={click ? 80: 200} fill='currentColor' alt='InitialImage'/>
                 <span><b>CLICK HERE</b></span>
             </Center>
 

@@ -10,14 +10,5 @@
         right:0rem;
         left: 2rem;
     }
-    .work{
-        top: 30px;
-    }
-    .intern{
-        right:1px;
-    }
-    .grid{
-        grid-template-columns: repeat(1, minmax(calc(10rem + 15vw), 1fr));
-    }
 }
 

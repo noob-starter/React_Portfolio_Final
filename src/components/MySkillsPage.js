@@ -19,7 +19,10 @@ display: flex;
 justify-content: space-evenly;
 align-items: center;
 
-
+@media (max-width: 500px) {
+    flex-direction: column;
+    margin-top: 120px;
+  }
 `
 
 const Main = styled.div`
@@ -42,6 +45,9 @@ justify-content: space-between;
     color: ${props => props.theme.body};
     background-color: #fda2c6;
 }
+@media (max-width: 500px) {
+    margin-top: 100px;
+  }
 `
 
 const Title = styled.h2`
@@ -91,6 +97,7 @@ const MySkillsPage = () => {
 <SocialIcons theme='light'/>
 <PowerButton />
 <ParticleComponent theme='light' />
+<BigTitle text="SKILLS" top="30%" right="30%" />
             <Main>
 <Title>
     <Design width={40} height={40} /> Programming Languages
@@ -140,7 +147,7 @@ VScode, Github, Android Studio etc.
             </Main>
             
 
-            <BigTitle text="SKILLS" top="80%" right="30%" />
+            
 
         </Box>
 

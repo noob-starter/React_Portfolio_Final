@@ -10,7 +10,6 @@ import AnchorComponent from '../subComponents/Anchor'
 import BigTitle from "../subComponents/BigTitlte"
 import { motion } from 'framer-motion'
 
-
 const MainContainer = styled(motion.div)`
 background-color: #FAE6FA;
 background-size: cover;
@@ -38,6 +37,9 @@ const Grid = styled.div`
 display: grid;
 grid-template-columns: repeat(2, minmax(calc(10rem + 15vw), 1fr));
 grid-gap: calc(1rem + 2vw);
+@media (max-width: 500px) {
+    grid-template-columns: repeat(1, minmax(calc(10rem + 15vw), 1fr));
+  }
 `
 
 // Framer-motion config
@@ -80,7 +82,7 @@ const BlogPage = () => {
                 <SocialIcons />
                 <AnchorComponent number={numbers}/>
 <Center>
-<Grid className='grid'>
+<Grid >
 
 {
     Blogs.map(blog => {
