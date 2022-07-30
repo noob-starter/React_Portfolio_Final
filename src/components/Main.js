@@ -63,6 +63,19 @@ z-index:1;
     top:40%;
   }
 `
+const MARKS = styled(NavLink)`
+color: ${props => props.click ? props.theme.body : props.theme.text};
+
+position: absolute;
+top: 30%;
+left: calc(1rem + 2vw);
+transform: translate(-50%, -50%) rotate(-90deg) ;
+text-decoration: none;
+z-index:1;
+@media (max-width: 500px) {
+    top:20%;
+  }
+`
 
 const BottomBar = styled.div`
 position: absolute;
@@ -79,11 +92,17 @@ const ABOUT = styled(NavLink)`
 color: ${props => props.click ? props.theme.body : props.theme.text};
 text-decoration: none;
 z-index:1;
+@media (max-width: 500px) {
+    bottom:10%;
+  }
 `
 const SKILLS = styled(NavLink)`
 color: ${props => props.theme.text};
 text-decoration: none;
 z-index:1;
+@media (max-width: 500px) {
+    bottom:10%;
+  }
 `
 
 const rotate = keyframes`
@@ -211,6 +230,22 @@ const Main = () => {
                     Work
                 </motion.h2>
             </WORK>
+            <MARKS to="/mark" click={+click}>
+                <motion.h2
+                initial={{
+                    y:-200,
+                    transition: { type:'spring', duration: 1.5, delay:1}
+                }}
+                animate={{
+                    y:0,
+                    transition: { type:'spring', duration: 1.5, delay:1}
+                }}
+                 whileHover={{scale: 1.1}}
+                whileTap={{scale: 0.9}}
+                >
+                    Mark
+                </motion.h2>
+            </MARKS>
             <BottomBar>
             <ABOUT to="/about" click={+click}>
                 <motion.h2
