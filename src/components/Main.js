@@ -93,7 +93,7 @@ color: ${props => props.click ? props.theme.body : props.theme.text};
 text-decoration: none;
 z-index:1;
 @media (max-width: 500px) {
-    bottom:10%;
+    top:90%;
   }
 `
 const SKILLS = styled(NavLink)`
@@ -101,7 +101,7 @@ color: ${props => props.theme.text};
 text-decoration: none;
 z-index:1;
 @media (max-width: 500px) {
-    bottom:10%;
+    top:90%;
   }
 `
 
