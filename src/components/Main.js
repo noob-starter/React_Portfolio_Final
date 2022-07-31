@@ -41,6 +41,19 @@ z-index:1;
 const BLOG = styled(NavLink)`
 color: ${props => props.theme.text};
 position: absolute;
+top: 70%;
+right: calc(1rem + 2vw);
+transform: rotate(90deg) translate(-50%, -50%);
+text-decoration: none;
+z-index:1;
+@media (max-width: 500px) {
+    right: 0rem;
+  }
+`
+
+const EDUCATE = styled(NavLink)`
+color: ${props => props.theme.text};
+position: absolute;
 top: 50%;
 right: calc(1rem + 2vw);
 transform: rotate(90deg) translate(-50%, -50%);
@@ -50,6 +63,7 @@ z-index:1;
     right: 0rem;
   }
 `
+
 const WORK = styled(NavLink)`
 color: ${props => props.click ? props.theme.body : props.theme.text};
 
@@ -211,6 +225,23 @@ const Main = () => {
                     Internship
                 </motion.h2>
             </BLOG>
+            <EDUCATE to="/educate">
+                <motion.h2
+                className='intern'
+                initial={{
+                    y:-200,
+                    transition: { type:'spring', duration: 1.5, delay:1}
+                }}
+                animate={{
+                    y:0,
+                    transition: { type:'spring', duration: 1.5, delay:1}
+                }}
+                whileHover={{scale: 1.1}}
+                whileTap={{scale: 0.9}}
+                >
+                    Education
+                </motion.h2>
+            </EDUCATE>
             <WORK to="/work" click={+click}>
                 <motion.h2
                 className='work'

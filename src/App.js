@@ -13,7 +13,7 @@ import MySkillsPage from './components/MySkillsPage';
 import { AnimatePresence } from "framer-motion";
 import SoundBar from "./subComponents/SoundBar";
 import MarksComponent from './components/Markspage'
-
+import EducationComponent from './components/Education'
 
 function App() {
 
@@ -36,7 +36,8 @@ function App() {
       <Route exact path="/work" component={WorkPage}/>
       <Route exact path="/skills" component={MySkillsPage}/>
       <Route exact path="/mark" component={MarksComponent}/>
-
+      <Route exact path="/educate" component={EducationComponent}/>
+  
     </Switch>
 </AnimatePresence>
     
